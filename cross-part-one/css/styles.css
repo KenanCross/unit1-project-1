@@ -1,0 +1,133 @@
+html {
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    margin: unset;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #ff4c0f;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+div {
+    padding: 1rem;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5rem .5rem;
+}
+
+header h1 {
+    margin: unset;
+    align-self: flex-start;
+}
+
+h2 {
+    margin: unset;
+}
+
+.cta-button {
+    background-color: #20a8bf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: .75rem;
+    width: 100%;
+}
+
+.cta-button:hover {
+    background-color: #ff4c0f;
+}
+
+.turquoise {
+    color: #20a8bf;
+}
+
+.orange {
+    color: #ff4c0f;
+}
+
+img {
+    width: 70%;
+    height: auto;
+}
+
+.image {
+    text-align: center;
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    ul {
+        flex-direction: row;
+        align-items: space-between;
+        align-self: flex-end;
+        margin: unset;
+        align-items: center;
+    }
+
+    section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    div {
+        flex: 1 0 40%;
+        display: block;
+    }
+
+    .image {
+        display: block;
+    }
+
+    .cta-button {
+        width: auto;
+    }
+}
